@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&family=Slackside+One&display=swap");
+
+/* .logo,
+h3 { */
+/* font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal; */
+
+/* font-family: "Slackside One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin-left: 8px; */
+/* } */
+.logo {
+  height: 8.2rem;
+}
