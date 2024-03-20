@@ -70,11 +70,11 @@ input:focus {
 
 /* Media Query: Tablet or Smaller */
 @media screen and (max-width: 1000px){
-  .root{
+  .main{
     background-size: cover;
     background-position: center;
-
   }
+}
 
 /*
 "importCSSModule": {
