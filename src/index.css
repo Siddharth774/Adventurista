@@ -70,7 +70,7 @@ input:focus {
 
 /* Media Query: Tablet or Smaller */
 @media screen and (max-width: 1000px){
-  .container{
+  .root{
     background-size: cover;
     background-position: center;
 
