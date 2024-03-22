@@ -8,7 +8,8 @@ import {
 
 const CitiesContext = createContext();
 
-const BASE_URL = "http://localhost:9000";
+// const BASE_URL = "http://localhost:9000";
+const BASE_URL = "https://adventurista-data.onrender.com/cities";
 
 const initalState = {
   cities: [],
@@ -76,7 +77,7 @@ function CitiesProvider({ children }) {
 
       try {
         // setIsLoading(true);
-        const res = await fetch(`${BASE_URL}/cities`);
+        const res = await fetch(`${BASE_URL}`);
         const data = await res.json();
         // setCities(data);
         dispatch({ type: "cities/loading", payload: data });
@@ -100,7 +101,7 @@ function CitiesProvider({ children }) {
     dispatch({ type: "loading" });
     try {
       // setIsLoading(true);
-      const res = await fetch(`${BASE_URL}/cities/${id}`);
+      const res = await fetch(`${BASE_URL}/${id}`);
       const data = await res.json();
       // setCurrentCity(data);
       dispatch({ type: "city/loaded", payload: data });
@@ -121,7 +122,7 @@ function CitiesProvider({ children }) {
 
     try {
       // setIsLoading(true);
-      const res = await fetch(`${BASE_URL}/cities`, {
+      const res = await fetch(`${BASE_URL}/`, {
         method: "POST",
         body: JSON.stringify(newCity),
         headers: {
@@ -148,7 +149,7 @@ function CitiesProvider({ children }) {
     dispatch({ type: "loading" });
     try {
       // setIsLoading(true);
-      await fetch(`${BASE_URL}/cities/${id}`, {
+      await fetch(`${BASE_URL}${id}`, {
         method: "DELETE",
       });
 

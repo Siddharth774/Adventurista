@@ -68,6 +68,12 @@ input:focus {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 1000px) {
+  .main {
+    background-size: cover;
+    background-position: center;
+  }
+}
 /*
 "importCSSModule": {
     "prefix": "csm",
