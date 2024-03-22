@@ -144,12 +144,13 @@ function CitiesProvider({ children }) {
     //   setIsLoading(false);
     // }
   }
+  // hello this this is new addition.
 
   async function deleteCity(id) {
     dispatch({ type: "loading" });
     try {
       // setIsLoading(true);
-      await fetch(`${BASE_URL}${id}`, {
+      await fetch(`${BASE_URL}/${id}`, {
         method: "DELETE",
       });
 
