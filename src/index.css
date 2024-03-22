@@ -68,6 +68,14 @@ input:focus {
   border-radius: 5px;
 }
 
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .main {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .main {
     background-size: cover;
