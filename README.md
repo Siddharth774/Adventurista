@@ -2,7 +2,7 @@
 
 Experience the epitome of professional travel tracking with Adventurista, where cutting-edge technology meets seamless functionality. Adventurista is built using React.js, JSON Server, JavaScript, and Map API, combining these technologies to create a comprehensive travel tracking application.
 
-### Live Link --> https://adventurista.vercel.app/
+### Access the application on the browser: Open your browser and navigate to --> https://adventurista.vercel.app/
 
 Features:
 
